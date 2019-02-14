@@ -1,4 +1,4 @@
-/*server.js*/
+/*This program is only a proof that nodeify is the function of bluebird not Promise in general*/
 const http = require('http');
 const async = require('async');
 const bluebird = require('bluebird');
