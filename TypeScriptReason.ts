@@ -8,3 +8,15 @@ function fun(){
   // You can't declare this.
   // aboutMe.abc = "";
 }
+
+class Animal {
+    name : string;
+    type : string; 
+}
+
+var lion : Animal;
+
+function roar(){
+    lion.type = "feline";
+    console.info(lion)
+}
