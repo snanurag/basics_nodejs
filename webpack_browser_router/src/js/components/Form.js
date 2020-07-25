@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
 
 class Form extends Component {
   constructor() {
@@ -23,13 +26,16 @@ class Form extends Component {
 
   render() {
     return (
-      <form>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
+        <Router>
+        <div>
+          <h2>Welcome to React Router Tutorial</h2>
+         
+          <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/about' component={About} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
