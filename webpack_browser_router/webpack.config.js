@@ -21,7 +21,7 @@ module.exports = {
     ]
   },
   devServer: {
-    historyApiFallback: true // this prevents the default browser full page refresh on form submission and link change
+    historyApiFallback: true // required for single page application for route navigation (since page never changes).
     },
       plugins: [
     new HtmlWebPackPlugin({
